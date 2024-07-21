@@ -1,0 +1,61 @@
+.header {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+
+  z-index: 8;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  transition: filter 0.3s ease-in-out;
+}
+
+.logoActive {
+  filter: drop-shadow(0 0 10px #0277bd);
+}
+
+.linksContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.link {
+  transition: color 0.3s ease-in-out;
+
+  color: var(--dark-grey);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 17px;
+  text-decoration: none;
+}
+
+.linkActive {
+  color: #0277bd;
+}
