@@ -8,7 +8,7 @@ Campervan overview: Detailed information and photos of each camper.
 User reviews: Feedback from users who have already rented a camper.
 Technologies The project was created with the help of the following technologies:
 
-JavaScript
-React
-CSS
-Vite
+#JavaScript
+#React
+#CSS
+#Vite
