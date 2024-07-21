@@ -1,0 +1,53 @@
+.reviewTop {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.reviewAvatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background: var(--light-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.name {
+  color: var(--red);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.fullRatingContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+}
+
+.fullName {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+}
+.comment {
+  color: var(--color-grey);
+  line-height: 1.5;
+}
+.filledIcon {
+  fill: var(--yellow);
+  stroke: var(--yellow);
+}
+.emptyIcon {
+  fill: #f2f4f7;
+  stroke: #f2f4f7;
+}
+.ratingContainer {
+  display: flex;
+  align-items: center;
+}
+.rating {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}

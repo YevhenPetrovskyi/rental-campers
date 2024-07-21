@@ -1,0 +1,89 @@
+.filtersTitle {
+  color: var(--grey);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+.filtersSubTitle {
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+.checkbox,
+.radio {
+  display: none;
+}
+
+.filtersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 8px;
+  margin-bottom: 32px;
+}
+.labelContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: calc(((100% - 20px) / 3));
+}
+.filterWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 10px;
+  border: 1px solid var(--light-opacity);
+  height: 95px;
+  text-align: center;
+  transition: var(--animation);
+}
+.filterWrapper:hover {
+  border: 1px solid var(--red-hover);
+}
+.checkbox:checked + .filterWrapper {
+  border: 1px solid var(--red-hover);
+}
+.radio:checked + .filterWrapper {
+  border: 1px solid var(--red-hover);
+}
+.automatic {
+  fill: none;
+  stroke: currentColor;
+}
+.eat {
+  fill: none;
+  stroke: currentColor;
+}
+.tv {
+  fill: none;
+  stroke: currentColor;
+}
+.shower {
+  fill: none;
+  stroke: currentColor;
+}
+.filterLabel {
+  max-width: 90px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+.searchBtn {
+  padding: 16px 60px;
+  border-radius: 200px;
+  background-color: var(--red);
+  color: white;
+  font-weight: 500;
+  line-height: 1.5;
+  transition: var(--animation);
+}
+.searchBtn:hover {
+  background-color: var(--red-hover);
+}
+.errorMessage {
+  color: var(--red);
+  margin-top: 10px;
+}

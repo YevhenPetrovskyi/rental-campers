@@ -4,6 +4,7 @@ import { fetchCampers } from './operations';
 const initialState = {
   campers: [],
   favorites: [],
+  location: '',
   isLoading: false,
   error: null,
 };
@@ -27,8 +28,11 @@ const camperSlice = createSlice({
     },
     removeFavorite(state, action) {
       state.favorites = state.favorites.filter(
-        (camper) => camper.id !== action.payload
+        (camper) => camper._id !== action.payload
       );
+    },
+    changeLocation(state, action) {
+      state.location = action.payload;
     },
   },
   extraReducers: (builder) => {
@@ -43,6 +47,7 @@ const camperSlice = createSlice({
   },
 });
 
-export const { addFavorite, removeFavorite } = camperSlice.actions;
+export const { addFavorite, removeFavorite, changeLocation } =
+  camperSlice.actions;
 
 export const camperReducer = camperSlice.reducer;

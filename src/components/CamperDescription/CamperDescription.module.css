@@ -1,0 +1,92 @@
+.descriptionContainer {
+  flex-grow: 1;
+}
+.mainInfo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.flexRight {
+  display: flex;
+  align-items: baseline;
+  gap: 11px;
+}
+
+.favoriteBtn {
+  background-color: transparent;
+}
+.favoriteBtn svg {
+  transition: var(--animation);
+}
+
+.favoriteBtn:hover svg {
+  stroke: var(--red);
+  fill: var(--red);
+}
+.heartActive {
+  stroke: var(--red);
+  fill: var(--red);
+}
+.heartNotActive {
+  fill: transparent;
+  stroke: var(--dark-grey);
+}
+
+.secondInfo {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.starIcon {
+  fill: var(--yellow);
+  stroke: var(--yellow);
+  margin-right: 4px;
+}
+.rating {
+  display: inline-block;
+}
+
+.locationIcon {
+  fill: none;
+  stroke: currentColor;
+  margin-right: 4px;
+}
+.location {
+  display: inline-block;
+}
+.text {
+  color: var(--grey);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 24px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+.showMoreBtn {
+  background-color: var(--red);
+  border-radius: 200px;
+  padding: 16px 40px;
+  color: white;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.08px;
+  transition: var(--animation);
+}
+.showMoreBtn:hover {
+  background-color: var(--red-hover);
+}
+@media screen and (min-width: 768px) {
+  .text {
+    max-width: 325px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .text {
+    max-width: 525px;
+  }
+}

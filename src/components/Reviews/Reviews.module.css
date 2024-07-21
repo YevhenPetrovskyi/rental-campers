@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  gap: 24px;
+}
+
+.revList {
+  width: 430px;
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}

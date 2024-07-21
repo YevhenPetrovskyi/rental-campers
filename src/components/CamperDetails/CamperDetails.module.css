@@ -1,0 +1,41 @@
+.detailsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.detailWrapper {
+  display: flex;
+  padding: 12px 18px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  background: var(--light-blue);
+}
+
+.text {
+  font-weight: 500;
+  line-height: 1.25;
+}
+.iconUsers {
+  fill: var(--dark-grey);
+  stroke: none;
+}
+.iconAutomatic {
+  fill: none;
+  stroke: currentColor;
+}
+
+.iconKitchen {
+  fill: none;
+  stroke: currentColor;
+}
+.iconBed {
+  fill: none;
+  stroke: currentColor;
+}
+.iconWind {
+  fill: var(--dark-grey);
+  stroke: none;
+}
