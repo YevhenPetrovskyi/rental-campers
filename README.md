@@ -2,9 +2,9 @@ CamperRentUA is a web application for renting campers in Ukraine. This project p
 
 Functionality:
 
-Campervan search: Easy search for available campers by various criteria.
-Booking: Ability to book a campervan online.
-Campervan overview: Detailed information and photos of each camper.
+Camper search: Easy search for available campers by various criteria.
+Booking: Ability to book a camper online.
+Camper overview: Detailed information and photos of each camper.
 User reviews: Feedback from users who have already rented a camper.
 Technologies The project was created with the help of the following technologies:
 
