@@ -1,0 +1,6 @@
+.catalogWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  width: 100%;
+}
