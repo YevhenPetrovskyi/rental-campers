@@ -1,0 +1,57 @@
+.homeWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  padding-top: 20px;
+  height: 100vh;
+
+  border-radius: 40px;
+
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 25.79%,
+      rgba(255, 255, 255, 0) 43.13%
+    ),
+    url('../../assets/images/rentHero.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  color: #fff;
+}
+
+.homeTitle {
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.link {
+  padding: 5px 15px;
+  font-size: 18px;
+  color: #fff;
+  background-color: var(--black-opacity);
+  border: 1px solid var(--yellow);
+  text-transform: uppercase;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: var(--animation);
+}
+
+.link:hover {
+  background-color: var(--light-opacity);
+}
+
+.subtitle {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.text {
+  line-height: 1.5;
+  font-size: 20px;
+}
