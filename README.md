@@ -1,8 +1,14 @@
-# React + Vite
+CamperRentUA is a web application for renting campers in Ukraine. This project provides a convenient platform for searching, booking, and renting campers, allowing users to enjoy traveling in comfort.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Functionality:
 
-Currently, two official plugins are available:
+Campervan search: Easy search for available campers by various criteria.
+Booking: Ability to book a campervan online.
+Campervan overview: Detailed information and photos of each camper.
+User reviews: Feedback from users who have already rented a camper.
+Technologies The project was created with the help of the following technologies:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+JavaScript
+React
+CSS
+Vite
