@@ -64,40 +64,41 @@ const CamperModal = ({ camper, onClose }) => {
         </div>
       </div>
       <p className={css.price}>€{price}.00</p>
-      <div className={css.camperGallery}>
-        {gallery.map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            alt={name}
-            className={css.camperImage}
-            width={290}
-            height={310}
-          />
-        ))}
+      <div className={css.scrollContainer}>
+        <div className={css.camperGallery}>
+          {gallery.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={name}
+              className={css.camperImage}
+              width={290}
+              height={310}
+            />
+          ))}
+        </div>
+        <p className={css.text}>{camper.description}</p>
+        <ul className={css.tabList}>
+          <li>
+            <button
+              className={buildLinkClass(activeTab === 'features')}
+              onClick={() => setActiveTab('features')}
+            >
+              Features
+            </button>
+          </li>
+          <li>
+            <button
+              className={buildLinkClass(activeTab === 'reviews')}
+              onClick={() => setActiveTab('reviews')}
+            >
+              Reviews
+            </button>
+          </li>
+          <div className={css.line}></div>
+        </ul>
+        {renderContent()}
       </div>
-      <p className={css.text}>{camper.description}</p>
-      <ul className={css.tabList}>
-        <li>
-          <button
-            className={buildLinkClass(activeTab === 'features')}
-            onClick={() => setActiveTab('features')}
-          >
-            Features
-          </button>
-        </li>
-        <li>
-          <button
-            className={buildLinkClass(activeTab === 'reviews')}
-            onClick={() => setActiveTab('reviews')}
-          >
-            Reviews
-          </button>
-        </li>
-        <div className={css.line}></div>
-      </ul>
-
-      {renderContent()}
     </div>
   );
 };
