@@ -27,43 +27,50 @@ const CamperModal = ({ camper, onClose }) => {
   };
   return (
     <div className={css.camperModalContainer}>
-      <div className={css.nameInfo}>
-        <p>{name}</p>
-        <button
-          type="button"
-          className={css.closeBtn}
-          onClick={() => onClose()}
-        >
-          <Icon
-            iconName="close"
-            width="32"
-            height="32"
-            styles={css.iconClose}
-          />
-        </button>
-      </div>
-      <div className={css.secondInfo}>
-        <div>
-          <Icon iconName="star" width="16" height="16" styles={css.starIcon} />
-          <p className={css.rating}>
-            {rating}(
-            {reviews.length > 1
-              ? `${reviews.length} Reviews`
-              : `${reviews.length} Review`}
-            )
-          </p>
+      <div className={css.mainInfoContainer}>
+        <div className={css.nameInfo}>
+          <p>{name}</p>
+          <button
+            type="button"
+            className={css.closeBtn}
+            onClick={() => onClose()}
+          >
+            <Icon
+              iconName="close"
+              width="32"
+              height="32"
+              styles={css.iconClose}
+            />
+          </button>
         </div>
-        <div>
-          <Icon
-            iconName="location"
-            width="16"
-            height="16"
-            styles={css.locationIcon}
-          />
-          <p className={css.location}>{location}</p>
+        <div className={css.secondInfo}>
+          <div>
+            <Icon
+              iconName="star"
+              width="16"
+              height="16"
+              styles={css.starIcon}
+            />
+            <p className={css.rating}>
+              {rating}(
+              {reviews.length > 1
+                ? `${reviews.length} Reviews`
+                : `${reviews.length} Review`}
+              )
+            </p>
+          </div>
+          <div>
+            <Icon
+              iconName="location"
+              width="16"
+              height="16"
+              styles={css.locationIcon}
+            />
+            <p className={css.location}>{location}</p>
+          </div>
         </div>
+        <p className={css.price}>€{price}.00</p>
       </div>
-      <p className={css.price}>€{price}.00</p>
       <div className={css.scrollContainer}>
         <div className={css.camperGallery}>
           {gallery.map((image, index) => (

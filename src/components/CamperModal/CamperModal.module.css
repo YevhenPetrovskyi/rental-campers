@@ -1,5 +1,5 @@
 .camperModalContainer {
-  padding: 20px;
+  padding: 40px;
   padding-right: 16px;
   background-color: #fff;
   border-radius: 20px;
@@ -8,7 +8,6 @@
 }
 
 .scrollContainer {
-  padding: 20px;
   padding-right: 16px;
   max-height: 600px;
   overflow-y: scroll;
@@ -21,6 +20,10 @@
 .scrollContainer::-webkit-scrollbar-thumb {
   background-color: #d9d9d9;
   border-radius: 7px;
+}
+
+.mainInfoContainer {
+  margin-right: 16px;
 }
 
 .nameInfo {
