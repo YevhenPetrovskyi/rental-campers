@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 import Modal from 'react-modal';
 import PropTypes from 'prop-types';
 
@@ -6,6 +8,18 @@ import css from './BasicModal.module.css';
 Modal.setAppElement('#root');
 
 const BasicModal = ({ isOpen, onClose, children }) => {
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
+
   return (
     <Modal
       className={css.modal}

@@ -22,6 +22,15 @@ body {
   margin: 0;
 }
 
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #d9d9d9;
+  border-radius: 7px;
+}
+
 h1,
 h2,
 h3,
